@@ -1,0 +1,61 @@
+body {
+    background-color: #F3E5D8;
+}
+nav {
+    background-color: #255538;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0 20px 0 20px;
+}
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+#banner {
+    background-image: url(../images/omelette.png);
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#text {
+    text-align: center;
+    width: 50%;
+}
+h3 {
+    color: #7E4333;
+}
+#miniatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.miniature {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+img {
+    width: 100px;
+}
+ul {
+    padding-left: 30px;
+}
