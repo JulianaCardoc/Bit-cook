@@ -1,111 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./proyecto-final/css/styles.css">
-
-</head>
-<body>
-        <nav>
-          <h2>BitCook</h2>
-          <div id="buttons">
-            <p>Send your recipe</p>
-            <button><img src="./images/dark-mode.png" alt="" /></button>
-          </div>
-        </nav>
-      
-      <main id="recipe-main">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <nav>
+      <h2><a href="./index.html">BitCook</a></h2>
+      <div id="buttons">
+        <p>Send your recipe</p>
+        <button class="dark-mode-button">
+          <i class="material-symbols-outlined">dark_mode</i>
+        </button>
+      </div>
+    </nav>
+    <main id="recipe-main">
+      <div id="first-box">
+        <header id="recipe-header"></header>
         <div>
-            <header id="recipe-header">
-            </header>
-        <div><h1>Simple Omelette</h1>
-        <p>They say everything looks better with odd numbers of things. But sometimes I put even numbers--just to upset the critics. Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. </p>
+          <h2 class="title">Simple Omelette</h2>
+          <p>
+            They say everything looks better with odd numbers of things. But
+            sometimes I put even numbers--just to upset the critics. Exercising
+            the imagination, experimenting with talents, being creative; these
+            things, to me, are truly the windows to your soul.
+          </p>
         </div>
-<div>
-    <h2>Preparation time</h2>
-    <ul>
-        <li>Total: Approximately 10 minutes.</li>
-        <li>Preparation: 5 minutes.</li>
-        <li>Cooking: 5 minutes.</li>
-    </ul>
-</div>
-<div>
-    <h2>Instructions</h2>
-    <ol>
-        <li>Beat the eggs: In a bowl, beat the eggs with a punch of salt and pepper until they are well mixed. You can add a tablespoong of water or mil for a fluffer texture.</li>
-        <li>Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-        <li>Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
-        <li>Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
-        <li>Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
-        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
-    </ol>
-</div>
-</div>
-<div id="right-main">
-    <div>
-        <h2>Ingredients</h2>
-        <ul>
+        <div id="preparation-time">
+          <h2>Preparation time</h2>
+          <ul>
+            <li>Total: Approximately 10 minutes.</li>
+            <li>Preparation: 5 minutes.</li>
+            <li>Cooking: 5 minutes.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Instructions</h2>
+          <ol>
+            <li>
+              Beat the eggs: In a bowl, beat the eggs with a punch of salt and
+              pepper until they are well mixed. You can add a tablespoong of
+              water or mil for a fluffer texture.
+            </li>
+            <li>
+              Heat the pan: Place a non-stick frying pan over medium heat and
+              add butter or oil.
+            </li>
+            <li>
+              Cook the omelette: Once the butter is melted and bubbling, pour in
+              the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </li>
+            <li>
+              Add fillings (optional): When the eggs begin to set at the edges
+              but are still slightly runny in the middle, sprinkle your chosen
+              fillings over one half of the omelette.
+            </li>
+            <li>
+              Fold and serve: As the omelette continues to cook, carefully lift
+              one edge and fold it over the fillings. Let it cook for another
+              minute, then slide it onto a plate.
+            </li>
+            <li>
+              Enjoy: Serve hot, with additional salt and pepper if needed.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div id="right-main">
+        <div id="second-box">
+          <h2>Ingredients</h2>
+          <ul>
             <li>2 - 3 large eggs</li>
             <li>Salt, to taste</li>
             <li>Pepper, to taste</li>
             <li>1 teablespoon of butter or oil</li>
-            <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs.</li>
-        </ul>
-        <h2>Nutrition</h2>
-        <table>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs.
+            </li>
+          </ul>
+          <h2>Nutrition</h2>
+          <table>
             <tr>
-                <td>Calories</td>
-                <td>277kcal</td>
+              <td>Calories</td>
+              <td>277kcal</td>
             </tr>
             <tr>
-                <td>Carbs</td>
-                <td>0g</td>
+              <td>Carbs</td>
+              <td>0g</td>
             </tr>
             <tr>
-                <td>Protein</td>
-                <td>20g</td>
+              <td>Protein</td>
+              <td>20g</td>
             </tr>
             <tr>
-                <td>Fat</td>
-                <td>22g</td>
+              <td>Fat</td>
+              <td>22g</td>
             </tr>
-        </table>
-    </div>
-    <div id="more-recipes">
-        <h2>More recipes</h2>
-        <div id="more-recipes-list">
-        <div class="lists">
-            <img src="./proyecto-final/images/omelette.png
-            " alt="">
-            <div>
-            <h3>Ad lorem ipsum</h3>
-            <p>They say everything looks better</p>
+          </table>
         </div>
-        </div>
-        <div class="lists">
-            <img src="./proyecto-final/images/omelette.png
-            " alt="">
+        <div id="third-box">
+          <h2>More recipes</h2>
+          <div id="more-recipes-list">
             <div>
+              <div
+                class="lists-img"
+                style="background-image: url(./images/omelette.png)"
+              ></div>
+              <div class="lists">
                 <h3>Ad lorem ipsum</h3>
                 <p>They say everything looks better</p>
-            </div>        </div>
-        <div class="lists">
-            <img src="./proyecto-final/images/omelette.png
-            " alt="">
-            <div>
-                <h3>Ad lorem ipsum</h3>
-                <p>They say everything looks better</p>
+              </div>
             </div>
+            <div>
+              <div
+                class="lists-img"
+                style="background-image: url(./images/omelette.png)"
+              ></div>
+              <div class="lists">
+                <h3>Ad lorem ipsum</h3>
+                <p>They say everything looks better</p>
+              </div>
+            </div>
+            <div>
+              <div
+                class="lists-img"
+                style="background-image: url(./images/omelette.png)"
+              ></div>
+              <div class="lists">
+                <h3>Ad lorem ipsum</h3>
+                <p>They say everything looks better</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
-</div>
-      </main>
-      <footer>
-        <h2>BitCook</h2>
-        <p>Copy</p>
-      </footer>
-</body>
+      </div>
+    </main>
+    <footer>
+      <h2><a href="./index.html">BitCook</a></h2>
+      <p>© 2024 Bogotá Institute of Technology.</p>
+    </footer>
+  </body>
 </html>
