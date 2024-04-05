@@ -5,6 +5,9 @@
 body {
     background-color: #F3E5D8;
 }
+
+/* NAV BAR */
+
 nav {
     background-color: #255538;
     display: flex;
@@ -19,6 +22,8 @@ nav {
 nav h2 a {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
+}
+a {
     text-decoration: none;
     color: white;
 }
@@ -49,6 +54,9 @@ main h2 {
     font-family: "DM Serif Display";
     font-weight: 400;
 }
+
+/* HOME */
+
 #banner {
     background-image: url(../images/omelette.png);
     background-size: cover;
@@ -112,6 +120,9 @@ main p, li, footer p {
 .miniature h2 {
     padding-left: 15px;
 }
+
+/* RECIPES */
+
 #recipe-header {
     background-image: url(../images/omelette.png);
     width: 100%;
@@ -123,7 +134,7 @@ main p, li, footer p {
 #recipe-main {
     margin-top: 40px;
     background-color: #F3E5D8;
-    padding: 20px;
+    
     border-radius: 5px;
     display: flex;
     gap: 40px;
@@ -185,7 +196,7 @@ td {
 }
 .lists-img {
     background-position: center;
-    background-size: cover;
+    background-size:100%;
     width: 40%;
     height: 5vw;
     border-radius: 5px;
@@ -193,6 +204,58 @@ td {
 .lists{
     flex-wrap: wrap;
 }
+
+/* FORM */
+
+main#form {
+    max-width: 60%;
+    margin-top: 40px;
+}
+#form div {
+    padding: 10px;
+}
+#recipe-form h2 {
+    font-size: 40px;
+}
+label{
+    font-family:"DM Serif Display", serif;
+    color: #7E4333;
+    font-weight: 500;
+    font-size: 24px;
+}
+#recipe-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+input {
+    width: 100%;
+    display: block;
+    background-color: #DFDFDF;
+    border: none;
+    border-radius: 5px;
+    
+}
+#recipe-name, #prep-time {
+    height: 3vw;
+    margin: 10px 0 0 0;
+}
+#ingredients, #instructions {
+    height: 10vw;
+    margin: 10px 0 0 0;
+}
+#form button {
+    background-color: #255538;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin: 10px 0 20px 10px; 
+    cursor: pointer;
+}
+
+/* FOOTER */
+
 footer {
     background-color: #255538;
     border-radius: 5px 5px 0 0;
@@ -210,5 +273,13 @@ footer h2 a {
     color: white;
 }
 
-
-
+@media (max-width: 768px) {
+    #recipe-main {
+    gap: 20px;
+    flex-direction: column;
+    }
+    #miniatures {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
