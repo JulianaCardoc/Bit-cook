@@ -6,17 +6,34 @@ body {
     background-color: #F3E5D8;
 }
 
+/* Dark Mode Styles */
+.dm-body {
+    background-color: black;
+}
+.dm-txt {
+    color: white;
+}
+.dm-card-bg {
+    background-color: #2F2F2F;
+}
+
+/* Light Mode Styles */
+.lm-card-bg {
+    background-color: white;
+}
+
+
 /* NAV BAR */
 
 nav {
     background-color: #255538;
     display: flex;
-    align-items: center;
-    color: white;
+    align-items:center;
+    
     justify-content: space-between;
     border-radius: 5px;
-    padding: 0 20px 0 20px;
-    height: 4vw;
+    padding: 20px;
+    height: 5vh;
     margin: 10px;
 }
 nav h2 a {
@@ -41,10 +58,16 @@ a {
     color: #255538;
     cursor: pointer;
     border: solid 1px;
-    border-radius: 20px;
-    height: 38px;
-    width: 40px;
+    border-radius: 50%;
+    width: 17%;
 }
+.material-symbols-outlined {
+    line-height: normal;
+    font-size: 155%;
+  }
+  
+
+
 main {
     max-width: 90%;
     margin: 0 auto;
@@ -102,7 +125,6 @@ main p, li, footer p {
     margin-top: 20px;
 }
 .miniature {
-    background-color: white;
     display: flex;
     flex-direction: column;
     padding: 8px 8px 20px 8px;
@@ -114,7 +136,7 @@ main p, li, footer p {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 15vw;
+    height: 20vh;
     border-radius: 5px ;
 }
 .miniature h2 {
@@ -168,12 +190,11 @@ main p, li, footer p {
 #second-box table{
     table-layout: fixed;
     border-collapse: collapse;
-    width: 17vw;
+    width: -webkit-fill-available;
 }
 th, td{
     border-bottom: 1px solid #7E4333; 
-    white-space: nowrap; 
-    text-align: left;  
+    white-space: nowrap;  
     padding: 10px 0;
     font-family: "DM Sans", sans-serif;
 
@@ -197,9 +218,11 @@ td {
 .lists-img {
     background-position: center;
     background-size:100%;
-    width: 40%;
-    height: 5vw;
+    width: 45%;
     border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 .lists{
     flex-wrap: wrap;
@@ -225,7 +248,7 @@ label{
 }
 #recipe-form {
     background-color: white;
-    padding: 20px;
+    
     border-radius: 5px;
 }
 input {
@@ -266,14 +289,24 @@ footer {
     align-items: center;
     padding: 20px;
 }
-footer h2 a {
+footer a {
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     text-decoration: none;
     color: white;
 }
+footer p {
+    text-align: right;
+}
 
-@media (max-width: 768px) {
+/* MEDIA QUERY */
+@media (max-width: 844px) {
+    h1 {
+        font-size: 200%;
+    }
+    #recipe-header {
+        height: 40vw;
+    }
     #recipe-main {
     gap: 20px;
     flex-direction: column;
@@ -282,4 +315,35 @@ footer h2 a {
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+    h2 {
+        font-size: 24px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    main#form {
+        max-width: 90%;
+    }
+    .lists-img {
+        width: 15%;
+    }
+    .lists {
+        align-content: flex-start;
+    }
 }
+
+@media (max-width:480px) {
+    #banner {
+        height: 40vw;
+    }
+    h1 {
+        font-size: 150%;
+    }
+    #miniatures {
+        grid-template-columns: 1fr;
+    }
+    .lists-img {
+        width: 50%;
+    }
+}
+
