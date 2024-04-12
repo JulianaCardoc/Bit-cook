@@ -373,6 +373,9 @@ footer p {
         min-width: none;
         max-width: none;
     }
+    #recipe-name, #prep-time {
+        height: 6vw;
+    }
 }
 
 @media (max-width:480px) {
